@@ -1,0 +1,43 @@
+ideas = {
+	
+	# 基建idea組	
+	bdt_base_ideas = {
+
+		# 基建 infrastructure
+		bdt_infrastructure_idea = {
+			# picture = 
+			on_add = {
+				# country_event = bdt.event.base.21100
+			}
+
+		} # infrastructure_idea
+
+		# 空軍基地 air_base
+		bdt_air_base_idea = {
+			# picture = 
+			on_add = {
+				# country_event = bdt.event.base.21101
+			}
+		} # 空軍基地
+
+		# 海軍基地 naval_base
+		bdt_naval_base_idea = {
+			# picture = 
+			on_add = {
+				# country_event = bdt.event.base.21102
+			}
+
+		} # 海軍基地
+
+		# 燃油庫 fuel_silo
+		bdt_fuel_silo_idea = {
+			# picture = 
+			on_add = {
+				# country_event = bdt.event.base.21103
+			}
+		}
+		
+	} # bdt_base_ideas
+
+}
+

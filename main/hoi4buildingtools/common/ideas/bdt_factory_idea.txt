@@ -1,0 +1,43 @@
+ideas = {
+	
+	# 工廠建筑idea組
+	bdt_factory_ideas = {
+
+		# 民用工廠idea industrial_complex
+		bdt_industrial_idea = {
+			# picture = 
+			on_add = {
+				# country_event = bdt.event.base.21200
+			}
+
+		} # 民用工廠idea
+
+		# 軍用工廠idea arms_factory
+		bdt_armsf_idea = {
+			# picture = 
+			on_add = {
+				# country_event = bdt.event.base.21201
+			}
+		} # 軍用工廠idea
+
+		# 造船廠（船鵃）idea dockyard
+		bdt_dockyard_idea = {
+			# picture = 
+			on_add = {
+				# country_event = bdt.event.base.21202
+			}
+
+		} # 造船廠（船鵃）idea
+
+		# 精煉廠idea synthetic_refinery
+		bdt_refinery_idea = {
+			# picture = 
+			on_add = {
+				# country_event = bdt.event.base.21203
+			}
+		} # 精煉廠idea
+
+
+	}
+
+}

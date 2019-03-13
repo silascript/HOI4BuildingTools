@@ -1,0 +1,55 @@
+﻿l_english:
+
+
+  ##########################idea##########################
+  #
+  #  #####################標題#####################
+  # idea欄
+  buildingTools_Idea:0 "建筑工具"
+  # idea組
+  bdt_base_ideas:0 "基建"
+  bdt_factory_ideas:0 "工廠建筑"
+  bdt_defence_ideas:0 "防禦建筑"
+  bdt_advanded_ideas:0 "高級建筑"
+
+  # 基建
+  bdt_infrastructure_idea:0 "基建建設"
+  bdt_air_base_idea:0 "空軍基地建設"
+  bdt_naval_base_idea:0 "海軍基地建設"
+  bdt_fuel_silo_idea:0 "燃油庫建設"
+
+  # 工廠建筑
+  bdt_industrial_idea:0 "民用工廠建設"
+  bdt_armsf_idea:0 "軍用工廠建設"
+  bdt_dockyard_idea:0 "船鵃建設"
+  bdt_refinery_idea:0 "精煉廠建設"
+  
+  # 防禦建筑
+  bdt_bunker_idea:0 "要塞建設" 
+  bdt_coastal_bunker_idea:0 "海岸要塞建設"
+  bdt_anti_air_idea:0 "防空建筑建設"
+  bdt_radar_station_idea:0 "雷達站建設"
+
+
+  # 高級建筑
+
+
+
+
+  #  #####################event#####################
+  #  
+  
+
+
+
+
+
+  ####################通用####################
+
+  ##事件通用按鈕文本
+  bdt.event.common.a:0 "確定"
+  bdt.event.common.b:0 "關閉"
+  bdt.event.common.c:0 "上一頁"
+  bdt.event.common.d:0 "下一頁"
+
+

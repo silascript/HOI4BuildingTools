@@ -1,0 +1,22 @@
+idea_categories = {
+	
+	# 	
+	buildingTools_Idea = {
+		# 基建idea組
+		slot = bdt_base_ideas
+
+		# 工廠建筑idea組
+		slot = bdt_factory_ideas
+
+		# 防禦建筑idea組
+		slot = bdt_defence_ideas
+
+		# 高級建筑idea組
+		slot = bdt_advanded_ideas
+
+
+		cost = 0
+		removal_cost = 0
+	}	
+
+}

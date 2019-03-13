@@ -1,0 +1,42 @@
+ideas = {
+	
+	# 防禦建筑idea組
+	bdt_defence_ideas = {
+
+		# 要塞idea bunker
+		bdt_bunker_idea = {
+			# picture = 
+			on_add = {
+				# country_event = bdt.event.base.21300
+			}
+		} # 要塞idea
+
+		# 海岸要塞idea coastal_bunker
+		bdt_coastal_bunker_idea = {
+			# picture = 
+			on_add = {
+				# country_event = bdt.event.base.21301
+			}
+
+		} # 海岸要塞idea
+
+
+		# 防空建筑idea anti_air_building
+		bdt_anti_air_idea = {
+			# picture = 
+			on_add = {
+				# country_event = bdt.event.base.21302
+			}
+		} # 防空建筑idea
+
+		# 雷達站idea radar_station
+		bdt_radar_station_idea = {
+			# picture = 
+			on_add = {
+				# country_event = bdt.event.base.21303
+			}
+		} # 雷達站idea
+
+	}
+
+}
