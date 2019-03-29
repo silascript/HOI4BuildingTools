@@ -1,0 +1,146 @@
+add_namespace = bdt.event.base
+#############################################
+#												#
+#						基礎建設					#
+#												#
+#############################################
+
+# 基建
+country_event = {
+	id = bdt.event.base.21100
+	title = bdt.event.base.21100.t
+	desc = bdt.event.base.21100.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+	}
+
+	# 移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = bdt_infrastructure_idea 
+		}
+	}
+
+	# 基建+1級
+	option = {
+		name = bdt.event.base.21100.a
+		every_owned_state = {
+
+			# 限制條件
+			limit = {
+				is_core_of = THIS
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+			}
+
+			# 添加建筑槽
+			add_extra_state_shared_building_slots = 1
+
+			# 添加建筑
+			add_building_construction = {
+				type = infrastructure 
+				level = 1
+				instant_build = yes
+			}
+
+		} # every_owned_state
+
+		# 返回基建選項事件選項頁面
+		country_event = { id = bdt.event.base.21100 }
+
+	} # 基建+1級
+
+	# 基建+5級
+	option = {
+		name = bdt.event.base.21100.b
+		every_owned_state = {
+			# 限制條件
+			limit = {
+				is_core_of = THIS
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+			}
+
+			# 添加建筑槽
+			add_extra_state_shared_building_slots = 5
+
+			# 添加建筑
+			add_building_construction = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+
+		} # every_owned_state
+
+		# 返回基建選項事件選項頁面
+		country_event = { id = bdt.event.base.21100 }
+
+	} # 基建+5級
+
+	# 基建滿級
+	option = {
+		name = bdt.event.base.21100.c
+		every_owned_state = {
+			# 限制條件
+			limit = {
+				is_core_of = THIS
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+			}
+
+			# 添加建筑槽
+			add_extra_state_shared_building_slots = 10
+			
+			# 添加建筑
+			add_building_construction = {
+				type = infrastructure
+				level = 10
+				instant_build = yes
+			}
+
+		} # every_owned_state
+
+		# 返回基建選項事件選項頁面
+		country_event = { id = bdt.event.base.21100 }
+
+	} # 基建滿級
+
+
+
+	# 關閉
+	option = {
+		name = bdt.event.common.b
+	}
+
+} # 基建
+
+
+# ================================================== #
+
+# 空軍基地(飛機場)
+
+
+# ================================================== #
+
+
+# 海軍基地()
+
+# ================================================== #
+
+
+# 燃油庫
+
+
+
+
+

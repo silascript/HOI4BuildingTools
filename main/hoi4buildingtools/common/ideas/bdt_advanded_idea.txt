@@ -1,0 +1,24 @@
+ideas = {
+	
+	# 高級建筑idea組
+	bdt_advanded_ideas = {
+
+		# 火箭發射井idea rocket_site
+		bdt_rocket_site_idea = {
+			# picture = 
+			on_add = {
+				# country_event = bdt.event.base.21400
+			}
+		} # 火箭發射井idea
+
+		# 核反應堆idea nuclear_reactor
+		bdt_nuclear_reactor_idea = {
+			# picture = 
+			on_add = {
+				# country_event = bdt.event.base.21401
+			}
+		} # 核反應堆idea
+
+	} # 高級建筑idea組
+
+}

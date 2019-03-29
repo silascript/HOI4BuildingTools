@@ -1,8 +1,8 @@
 infrastructure	(基礎建設--修路)	最大等級10
-arms_factory	(軍用工廠)	最大等級20
-industrial_complex (民用工廠)	最大等級20
 air_base	(空軍基地)	最大等級10
 naval_base	(海軍基地)	最大等級10
+arms_factory	(軍用工廠)	最大等級20
+industrial_complex (民用工廠)	最大等級20
 bunker		(要塞)	最大等級10
 coastal_bunker	(海岸要塞)	最大等級10
 dockyard		(造船廠/船鵃)		最大等級20
