@@ -100,7 +100,7 @@ country_event = {
 
 			# 添加建筑槽
 			add_extra_state_shared_building_slots = 10
-			
+
 			# 添加建筑
 			add_building_construction = {
 				type = infrastructure
@@ -128,12 +128,151 @@ country_event = {
 # ================================================== #
 
 # 空軍基地(飛機場)
+country_event = {
+	id = bdt.event.base.21101
+	title = bdt.event.base.21101.t
+	desc = bdt.event.base.21101.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+	}
+	
+	# 移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = bdt_air_base_idea 
+		}
+	}
+
+	# 所有空軍基地升一級
+	option = {
+		name = bdt.event.base.21101.a
+
+		every_owned_state = {
+			limit = {
+				is_core_of = THIS
+				free_building_slots = {
+					building = air_base
+					size > 0
+				}
+			}
+
+			# 空軍基地升1級
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+
+		} # every_owned_state
+
+		# 返回空軍基地選項事件選項頁面
+		country_event = { id = bdt.event.base.21101 }
+
+	} # 所有空軍基地升一級
+
+	# 全國空軍基地升5級
+	# 沒有空軍基地的省自動添加一級空軍基地
+	option = {
+		name = bdt.event.base.21101.b
+
+		every_owned_state = {
+			limit = {
+				is_core_of = THIS
+				free_building_slots = {
+					building = air_base
+					size > 0
+				}
+			}
+
+			# 空軍基地升5級
+			add_building_construction = {
+				type = air_base
+				level = 5
+				instant_build = yes
+			}
+
+		} # every_owned_state
+
+		# 返回空軍基地選項事件選項頁面
+		country_event = { id = bdt.event.base.21101 }
+		
+	} # 全國空軍基地升5級
+
+	# 全國各省空軍基地滿級(10級)
+	option = {
+		name = bdt.event.base.21101.c
+		
+		every_owned_state = {
+			limit = {
+				is_core_of = THIS
+				free_building_slots = {
+					building = air_base
+					size > 1
+				}
+			}
+
+			# 空軍基地升10級(滿級)
+			add_building_construction = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+
+
+		} # every_owned_state
+
+		# 返回空軍基地選項事件選項頁面
+		country_event = { id = bdt.event.base.21101 }
+	}
+
+	# 關閉
+	option = {
+		name = bdt.event.common.b
+	}	
+
+} # 空軍基地
 
 
 # ================================================== #
 
 
-# 海軍基地()
+# 海軍基地
+country_event = {
+	id = bdt.event.base.21102
+	title = bdt.event.base.21102.t
+	desc = bdt.event.base.21102.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+	}
+	
+	# 移除海軍基地idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = bdt_naval_base_idea 
+		}
+	}
+
+	#  全國各省添加一個空軍基地
+	option = {}
+
+	#  全國各省添加五個空軍基地
+	option = {}
+
+	#  全國各省添加十個空軍基地
+	option = {}
+
+	# 關閉
+	option = {
+		name = bdt.event.common.b
+	}
+	
+} # 海軍基地
 
 # ================================================== #
 

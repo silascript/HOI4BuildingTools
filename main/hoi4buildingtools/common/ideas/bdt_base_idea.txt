@@ -16,7 +16,7 @@ ideas = {
 		bdt_air_base_idea = {
 			# picture = 
 			on_add = {
-				# country_event = bdt.event.base.21101
+				country_event = bdt.event.base.21101
 			}
 		} # 空軍基地
 
@@ -24,7 +24,7 @@ ideas = {
 		bdt_naval_base_idea = {
 			# picture = 
 			on_add = {
-				# country_event = bdt.event.base.21102
+				country_event = bdt.event.base.21102
 			}
 
 		} # 海軍基地

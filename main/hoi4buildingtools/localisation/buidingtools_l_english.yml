@@ -48,7 +48,10 @@
   
   # 空軍基地
   bdt.event.base.21101.t:0 "空軍基地"
-  bdt.event.base.21101.d:0 "空軍基地,即飛機場"
+  bdt.event.base.21101.d:0 "空軍基地，即飛機場。每省空軍基地最大10級"
+  bdt.event.base.21101.a:0 "所有空軍基地升§G1§!級"
+  bdt.event.base.21101.b:0 "所有空軍基地升§G5§!級"
+  bdt.event.base.21101.c:0 "所有空軍基地滿級(§G10§!級)"
 
   # 海軍基地
   bdt.event.base.21102.t:0 "海軍基地"
