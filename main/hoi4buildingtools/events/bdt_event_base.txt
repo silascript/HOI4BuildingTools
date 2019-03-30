@@ -50,9 +50,6 @@ country_event = {
 
 		} # every_owned_state
 
-		# 返回基建選項事件選項頁面
-		country_event = { id = bdt.event.base.21100 }
-
 	} # 基建+1級
 
 	# 基建+5級
@@ -80,9 +77,6 @@ country_event = {
 
 		} # every_owned_state
 
-		# 返回基建選項事件選項頁面
-		country_event = { id = bdt.event.base.21100 }
-
 	} # 基建+5級
 
 	# 基建滿級
@@ -109,9 +103,6 @@ country_event = {
 			}
 
 		} # every_owned_state
-
-		# 返回基建選項事件選項頁面
-		country_event = { id = bdt.event.base.21100 }
 
 	} # 基建滿級
 
@@ -336,6 +327,41 @@ country_event = {
 
 
 # 燃油庫
+# country_event = {
+#	id = bdt.event.base.21103
+#	title = bdt.event.base.21103.t
+#	desc = bdt.event.base.21103.d
+#
+#	is_triggered_only = yes
+#
+#	trigger = {
+#		is_ai = no
+#	}
+#	
+#	# 移除燃油庫idea
+#	immediate = {
+#		hidden_effect = { 
+#			remove_ideas = bdt_fuel_silo_idea 
+#		}
+#	}
+#
+#	# 升級燃油庫1級
+#	option = {
+#		name = bdt.event.base.21103.a
+#	 
+#		# max_fuel_building = 110	
+#	 
+#	}
+#
+#
+#
+#	# 關閉
+#	option = {
+#		name = bdt.event.common.b
+#	}
+# 
+# 
+# } # 燃油庫
 
 
 

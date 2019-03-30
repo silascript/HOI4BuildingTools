@@ -30,12 +30,12 @@ ideas = {
 		} # 海軍基地
 
 		# 燃油庫 fuel_silo
-		bdt_fuel_silo_idea = {
-			# picture = 
-			on_add = {
-				# country_event = bdt.event.base.21103
-			}
-		}
+		# bdt_fuel_silo_idea = {
+		# 	# picture = 
+		# 	on_add = {
+		# 		# country_event = bdt.event.base.21103
+		# 	}
+		# }
 		
 	} # bdt_base_ideas
 
