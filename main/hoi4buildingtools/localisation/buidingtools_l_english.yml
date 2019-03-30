@@ -55,7 +55,10 @@
 
   # 海軍基地
   bdt.event.base.21102.t:0 "海軍基地"
-  bdt.event.base.21102.d:0 "海軍基地"
+  bdt.event.base.21102.d:0 "海軍基地,衹對擁有已建有海軍基地的省份有效"
+  bdt.event.base.21102.a:0 "海軍基地升§G1§!級"
+  bdt.event.base.21102.b:0 "海軍基地升§G5§!級"
+  bdt.event.base.21102.c:0 "海軍基地滿級(§G10§!級)"
 
   # 燃油庫
   bdt.event.base.21103.t:0 "燃油庫"

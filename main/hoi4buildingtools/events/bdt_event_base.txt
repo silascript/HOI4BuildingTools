@@ -168,9 +168,6 @@ country_event = {
 
 		} # every_owned_state
 
-		# 返回空軍基地選項事件選項頁面
-		country_event = { id = bdt.event.base.21101 }
-
 	} # 所有空軍基地升一級
 
 	# 全國空軍基地升5級
@@ -196,9 +193,6 @@ country_event = {
 
 		} # every_owned_state
 
-		# 返回空軍基地選項事件選項頁面
-		country_event = { id = bdt.event.base.21101 }
-		
 	} # 全國空軍基地升5級
 
 	# 全國各省空軍基地滿級(10級)
@@ -224,8 +218,6 @@ country_event = {
 
 		} # every_owned_state
 
-		# 返回空軍基地選項事件選項頁面
-		country_event = { id = bdt.event.base.21101 }
 	}
 
 	# 關閉
@@ -258,14 +250,80 @@ country_event = {
 		}
 	}
 
-	#  全國各省添加一個空軍基地
-	option = {}
+	#  全國已有海軍基地升1級
+	option = {
+		name = bdt.event.base.21102.a
 
-	#  全國各省添加五個空軍基地
-	option = {}
+		every_owned_state = {
+			limit = {
+				is_core_of = THIS
+			}
 
-	#  全國各省添加十個空軍基地
-	option = {}
+			# 海軍基地升1級
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				# 衹針對已有海軍基地的省份
+				province = {
+					all_provinces = yes
+					limit_to_naval_base  = yes
+				}
+			}
+
+		} # every_owned_state
+
+	} # 全國已有海軍基地升1級
+
+	# 全國已有海軍基地升5級
+	option = {
+		name = bdt.event.base.21102.b
+
+		every_owned_state = {
+			limit = {
+				is_core_of = THIS
+			}
+
+			# 海軍基地升5級
+			add_building_construction = {
+				type = naval_base
+				level = 5
+				instant_build = yes
+				# 衹針對已有海軍基地的省份
+				province = {
+					all_provinces = yes
+					limit_to_naval_base  = yes
+				}
+			}
+
+		} # every_owned_state
+
+	} # 全國已有海軍基地升5級
+
+	#  全國已有海軍基地滿級(10級)
+	option = {
+		name = bdt.event.base.21102.c
+
+		every_owned_state = {
+			limit = {
+				is_core_of = THIS
+			}
+
+			# 海軍基地升滿級(10級)
+			add_building_construction = {
+				type = naval_base
+				level = 10
+				instant_build = yes
+				# 衹針對已有海軍基地的省份
+				province = {
+					all_provinces = yes
+					limit_to_naval_base  = yes
+				}
+			}
+
+		} # every_owned_state
+
+	} # 全國已有海軍基地滿級(10級)
 
 	# 關閉
 	option = {
