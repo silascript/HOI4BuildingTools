@@ -205,7 +205,55 @@ country_event = {
 		}
 	}
 
-	option = {}
+	# 防空建筑升1級
+	option = {
+		name = bdt.event.defence.21302.a
+
+		every_owned_state = {
+
+			# 加防空
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+			} # 加防空
+		} # every_owned_state
+
+	} # 防空建筑升1級
+
+
+	# 防空建筑升2級
+	option = {
+		name = bdt.event.defence.21302.b
+
+		every_owned_state = {
+
+			# 加防空
+			add_building_construction = {
+				type = anti_air_building
+				level = 2
+				instant_build = yes
+			} # 加防空
+		} # every_owned_state
+
+	} # 防空建筑升2級
+
+
+	# 防空建筑滿級(5級)
+	option = {
+		name = bdt.event.defence.21302.c
+
+		every_owned_state = {
+
+			# 加防空
+			add_building_construction = {
+				type = anti_air_building
+				level = 5
+				instant_build = yes
+			} # 加防空
+		} # every_owned_state
+
+	} # 防空建筑滿級
 
 	# 關閉
 	option = {

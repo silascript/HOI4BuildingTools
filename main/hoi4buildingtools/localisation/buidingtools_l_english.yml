@@ -115,9 +115,9 @@
   # 防空建筑
   bdt.event.defence.21302.t:0 "防空建筑"
   bdt.event.defence.21302.d:0 "防空建筑"
-  bdt.event.defence.21302.a:0 "防空建筑升§G1§!級"
-  bdt.event.defence.21302.b:0 "防空建筑升§G2§!級"
-  bdt.event.defence.21302.c:0 "防空建筑滿級(§G10§!級)"
+  bdt.event.defence.21302.a:0 "防空升§G1§!級"
+  bdt.event.defence.21302.b:0 "防空升§G2§!級"
+  bdt.event.defence.21302.c:0 "防空滿級(§G5§!級)"
 
 
   # 雷達站 
