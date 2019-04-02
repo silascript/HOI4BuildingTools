@@ -98,10 +98,10 @@
   # #####################防禦建筑#####################
   # 要塞
   bdt.event.defence.21300.t:0 "要塞"
-  bdt.event.defence.21300.d:0 "要塞,陸上要塞"
-  bdt.event.defence.21300.a:0 "要塞升§G1§!級"
-  bdt.event.defence.21300.b:0 "要塞升§G2§!級"
-  bdt.event.defence.21300.c:0 "要塞滿級(§G10§!級)"
+  bdt.event.defence.21300.d:0 "要塞,特指陸上要塞。\n已有要塞，即省份至少存在1級陸上要塞(因官方未提供相應的API此功能暫未能實現)。\n邊境要塞只針對邊境省份有效，無添加，有升1級。\n全要塞，每個地區每個省份均建要塞，有了就升一級！"
+  # bdt.event.defence.21300.a:0 "已有要塞升§G1§!級"
+  bdt.event.defence.21300.b:0 "邊境要塞升§G1§!級"
+  bdt.event.defence.21300.c:0 "全要塞"
   
 
   # 海岸要塞

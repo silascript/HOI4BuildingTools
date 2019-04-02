@@ -7,9 +7,9 @@ add_namespace = bdt.event.defence
 
 # 要塞
 country_event = {
-	id = bdt.event.factory.21300
-	title = bdt.event.factory.21300.t
-	desc = bdt.event.factory.21300.d
+	id = bdt.event.defence.21300
+	title = bdt.event.defence.21300.t
+	desc = bdt.event.defence.21300.d
 
 	is_triggered_only = yes
 
@@ -24,7 +24,58 @@ country_event = {
 		}
 	}
 
-	option = {}
+	# 已有要塞升1級
+	#option = {
+	#	name = bdt.event.defence.21300.a
+	#	every_owned_state = {
+	#		# 建要塞
+	#		add_building_construction = {
+	#			type = bunker
+	#			level = 1
+	#			instant_build = yes
+	#			# 檢測province是否已建有要塞
+	#			# 暫時沒有相應的API
+    #        } # 建要塞
+	#} # 已有要塞升1級
+
+	# 邊境要塞升1級
+	option = {
+		name = bdt.event.defence.21300.b
+
+		every_owned_state = {
+
+			# 建要塞
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = {
+              		all_provinces = yes
+					limit_to_border = yes 
+				}
+            } # 建要塞
+
+		} # every_owned_state
+
+	} # 邊境要塞升1級
+
+	# 全要塞
+	option = {
+		name = bdt.event.defence.21300.c
+
+		every_owned_state = {
+
+			# 建要塞
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = { all_provinces = yes }
+            } # 建要塞
+
+		} # every_owned_state
+
+	} # 全要塞
 
 	# 關閉
 	option = {
@@ -38,9 +89,9 @@ country_event = {
 
 # 海岸要塞
 country_event = {
-	id = bdt.event.factory.21301
-	title = bdt.event.factory.21301.t
-	desc = bdt.event.factory.21301.d
+	id = bdt.event.defence.21301
+	title = bdt.event.defence.21301.t
+	desc = bdt.event.defence.21301.d
 
 	is_triggered_only = yes
 
@@ -69,9 +120,9 @@ country_event = {
 
 # 防空建筑
 country_event = {
-	id = bdt.event.factory.21302
-	title = bdt.event.factory.21302.t
-	desc = bdt.event.factory.21302.d
+	id = bdt.event.defence.21302
+	title = bdt.event.defence.21302.t
+	desc = bdt.event.defence.21302.d
 
 	is_triggered_only = yes
 
@@ -99,9 +150,9 @@ country_event = {
 
 # 雷達站
 country_event = {
-	id = bdt.event.factory.21303
-	title = bdt.event.factory.21303.t
-	desc = bdt.event.factory.21303.d
+	id = bdt.event.defence.21303
+	title = bdt.event.defence.21303.t
+	desc = bdt.event.defence.21303.d
 
 	is_triggered_only = yes
 
