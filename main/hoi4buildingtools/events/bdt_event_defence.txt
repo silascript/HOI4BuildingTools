@@ -106,7 +106,75 @@ country_event = {
 		}
 	}
 
-	option = {}
+	# 海軍基地海岸要塞升1級(只限定海軍基地所在的省份)
+	option = {
+		name = bdt.event.defence.21301.a
+
+		every_owned_state = {
+
+			# 建要塞
+			add_building_construction = {
+				type = coastal_bunker
+				level = 1
+				instant_build = yes
+				# 檢測province是否是海軍基地所在的省份
+				province = {
+					all_provinces = yes
+					limit_to_naval_base= yes
+				}
+
+            } # 建要塞
+
+		} # every_owned_state
+
+	} # 海軍基地海岸要塞升1級
+
+	# 所有沿海省份要塞(包括非海軍基地省份)升1級
+	option = {
+		name = bdt.event.defence.21301.b
+
+		every_owned_state = {
+
+			# 建要塞
+			add_building_construction = {
+				type = coastal_bunker
+				level = 1
+				instant_build = yes
+				# 檢測province是否是沿海
+				province = {
+					all_provinces = yes
+					limit_to_coastal = yes
+				}
+
+            } # 建要塞
+
+		} # every_owned_state
+
+	} # 所有沿海省份要塞
+
+
+	# 所有沿海省份要塞滿級(10級)(包括非海軍基地省份)
+	option = {
+		name = bdt.event.defence.21301.c
+
+		every_owned_state = {
+
+			# 建要塞
+			add_building_construction = {
+				type = coastal_bunker
+				level = 10
+				instant_build = yes
+				# 檢測province是否是沿海
+				province = {
+					all_provinces = yes
+					limit_to_coastal= yes
+				}
+
+            } # 建要塞
+
+		} # every_owned_state
+
+	} # 所有沿海省份要塞滿級(包括非海軍基地省份)
 
 	# 關閉
 	option = {

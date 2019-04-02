@@ -106,10 +106,10 @@
 
   # 海岸要塞
   bdt.event.defence.21301.t:0 "海岸要塞"
-  bdt.event.defence.21301.d:0 "海岸要塞,衹對沿海省份有效"
-  bdt.event.defence.21301.a:0 "海岸要塞升§G1§!級"
-  bdt.event.defence.21301.b:0 "海岸要塞升§G2§!級"
-  bdt.event.defence.21301.c:0 "海岸要塞滿級(§G10§!級)"
+  bdt.event.defence.21301.d:0 "海岸要塞\n海軍基地要塞:海軍所在省份海岸要塞等級。\n所有沿海省份，包括非海軍基地的省份的海岸要塞等級。"
+  bdt.event.defence.21301.a:0 "海軍基地要塞升§G1§!級"
+  bdt.event.defence.21301.b:0 "所有海岸要塞升§G1§!級"
+  bdt.event.defence.21301.c:0 "所有海岸要塞滿級(§G10§!級)"
   
 
   # 防空建筑
