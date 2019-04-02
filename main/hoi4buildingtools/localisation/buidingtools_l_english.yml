@@ -91,27 +91,41 @@
 
   # 精煉廠 
   bdt.event.factory.21203.t:0 "精煉廠"
-  bdt.event.factory.21203.d:0 "精煉廠"
+  bdt.event.factory.21203.d:0 "精煉廠,在覈心領土中的每個省，添加相應數量精煉廠。必須已擁有精煉科技。"
+  bdt.event.factory.21203.a:0 "添加§G1§!個精煉廠"
+  bdt.event.factory.21203.b:0 "添加§G2§!個精煉廠"
 
   # #####################防禦建筑#####################
   # 要塞
   bdt.event.defence.21300.t:0 "要塞"
   bdt.event.defence.21300.d:0 "要塞,陸上要塞"
+  bdt.event.defence.21300.a:0 "要塞升§G1§!級"
+  bdt.event.defence.21300.b:0 "要塞升§G2§!級"
+  bdt.event.defence.21300.c:0 "要塞滿級(§G10§!級)"
   
 
   # 海岸要塞
   bdt.event.defence.21301.t:0 "海岸要塞"
   bdt.event.defence.21301.d:0 "海岸要塞,衹對沿海省份有效"
+  bdt.event.defence.21301.a:0 "海岸要塞升§G1§!級"
+  bdt.event.defence.21301.b:0 "海岸要塞升§G2§!級"
+  bdt.event.defence.21301.c:0 "海岸要塞滿級(§G10§!級)"
   
 
   # 防空建筑
   bdt.event.defence.21302.t:0 "防空建筑"
   bdt.event.defence.21302.d:0 "防空建筑"
+  bdt.event.defence.21302.a:0 "防空建筑升§G1§!級"
+  bdt.event.defence.21302.b:0 "防空建筑升§G2§!級"
+  bdt.event.defence.21302.c:0 "防空建筑滿級(§G10§!級)"
 
 
   # 雷達站 
   bdt.event.defence.21303.t:0 "雷達站"
   bdt.event.defence.21303.d:0 "雷達站"
+  bdt.event.defence.21303.a:0 "雷達站升§G1§!級"
+  bdt.event.defence.21303.b:0 "雷達站升§G2§!級"
+  bdt.event.defence.21303.c:0 "雷達站滿級(§G10§!級)"
 
   # #####################高級建筑#####################
   # 火箭發射井
