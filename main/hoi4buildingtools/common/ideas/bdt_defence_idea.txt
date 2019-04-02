@@ -7,7 +7,7 @@ ideas = {
 		bdt_bunker_idea = {
 			# picture = 
 			on_add = {
-				# country_event = bdt.event.defence.21300
+				country_event = bdt.event.defence.21300
 			}
 		} # 要塞idea
 
@@ -15,7 +15,7 @@ ideas = {
 		bdt_coastal_bunker_idea = {
 			# picture = 
 			on_add = {
-				# country_event = bdt.event.defence.21301
+				country_event = bdt.event.defence.21301
 			}
 
 		} # 海岸要塞idea
@@ -25,7 +25,7 @@ ideas = {
 		bdt_anti_air_idea = {
 			# picture = 
 			on_add = {
-				# country_event = bdt.event.defence.21302
+				country_event = bdt.event.defence.21302
 			}
 		} # 防空建筑idea
 
@@ -33,7 +33,7 @@ ideas = {
 		bdt_radar_station_idea = {
 			# picture = 
 			on_add = {
-				# country_event = bdt.event.defence.21303
+				country_event = bdt.event.defence.21303
 			}
 		} # 雷達站idea
 
