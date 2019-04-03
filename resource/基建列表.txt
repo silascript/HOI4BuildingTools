@@ -9,7 +9,17 @@ dockyard		(造船廠/船鵃)		最大等級20(個)
 anti_air_building (防空建筑)	最大等級5
 synthetic_refinery	(精煉廠)		最大3(個) --不鎖定最大值(註釋寫不鎖定，但遊戲中鎖定)
 fuel_silo	(燃油庫)		max_fuel_building 默認100
-radar_station	(雷達站)		最大等級6 --不鎖定最大值
+radar_station	(雷達站)		最大等級6 --不鎖定最大值 (
+	前置科技及允許建造的雷達站等級
+	radio_detection(无线电侦测): 雷達站1級
+	decimetric_radar(分米波雷达):雷達站2級
+	improved_decimetric_radar(改良分米波雷达):雷達站3級
+	centimetric_radar(厘米波雷达):雷達站4級
+	improved_centimetric_radar(改良厘米波雷达):雷達站5級
+	advanced_centimetric_radar(先进厘米波雷达):雷達站6級
+
+	)
+
 rocket_site	(火箭發射井)		最大等級5
 nuclear_reactor	(核反應堆)	最大等級1 --不鎖定最大值
 

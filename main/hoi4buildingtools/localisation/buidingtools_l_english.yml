@@ -121,11 +121,25 @@
 
 
   # 雷達站 
-  bdt.event.defence.21303.t:0 "雷達站"
-  bdt.event.defence.21303.d:0 "雷達站"
-  bdt.event.defence.21303.a:0 "雷達站升§G1§!級"
-  bdt.event.defence.21303.b:0 "雷達站升§G2§!級"
-  bdt.event.defence.21303.c:0 "雷達站滿級(§G10§!級)"
+  bdt.event.defence.2130300.t:0 "雷達站"
+  bdt.event.defence.2130300.d:0 "雷達站,需要前置雷達科技\nradio_detection(无线电侦测):雷達站1級\ndecimetric_radar(分米波雷达):雷達站2級\n"
+
+  # 1~2級雷達站
+  bdt.event.defence.2130300.a:0 "設置爲1級雷達站"
+  bdt.event.defence.2130300.b:0 "設置爲2級雷達站"
+  # bdt.event.defence.2130300.c:0 "3~4級雷達站"
+
+  # 3~4級雷達站
+  bdt.event.defence.2130301.t:0 "設置3~4級雷達站"
+  bdt.event.defence.2130301.d:0 "設置3~4級雷達站\n前置科技:\nimproved_decimetric_radar(改良分米波雷达):雷達站3級\ncentimetric_radar(厘米波雷达):雷達站4級\n"
+  bdt.event.defence.2130301.a:0 "設置爲3級雷達站"
+  bdt.event.defence.2130301.b:0 "設置爲4級雷達站"
+
+  # 5~6級雷達站
+  bdt.event.defence.2130302.t:0 "設置5~6級雷達站"
+  bdt.event.defence.2130302.d:0 "設置5~6級雷達站\n前置科技:\nimproved_centimetric_radar(改良厘米波雷达):雷達站5級\nadvanced_centimetric_radar(先进厘米波雷达):雷達站6級\n"
+  bdt.event.defence.2130302.a:0 "設置爲5級雷達站"
+  bdt.event.defence.2130302.b:0 "設置爲6級雷達站"
 
   # #####################高級建筑#####################
   # 火箭發射井

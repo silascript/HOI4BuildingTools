@@ -85,7 +85,7 @@ country_event = {
 }
 
 
-# ================================================== #
+# =========================海岸要塞========================= #
 
 # 海岸要塞
 country_event = {
@@ -184,7 +184,7 @@ country_event = {
 }
 
 
-# ================================================== #
+# ==========================防空建筑======================== #
 
 # 防空建筑
 country_event = {
@@ -262,13 +262,21 @@ country_event = {
 
 }
 
-# ================================================== #
+# =========================雷達站========================= #
 
-# 雷達站
+# radio_detection(无线电侦测): 雷達站1級
+# decimetric_radar(分米波雷达):雷達站2級
+# improved_decimetric_radar(改良分米波雷达):雷達站3級
+# centimetric_radar(厘米波雷达):雷達站4級
+# improved_centimetric_radar(改良厘米波雷达):雷達站5級
+# advanced_centimetric_radar(先进厘米波雷达):雷達站6級
+
+
+# 1~2雷達站
 country_event = {
-	id = bdt.event.defence.21303
-	title = bdt.event.defence.21303.t
-	desc = bdt.event.defence.21303.d
+	id = bdt.event.defence.2130300
+	title = bdt.event.defence.2130300.t
+	desc = bdt.event.defence.2130300.d
 
 	is_triggered_only = yes
 
@@ -283,12 +291,281 @@ country_event = {
 		}
 	}
 
-	option = {}
+	# 設置1級雷達站
+	option = {
+		name = bdt.event.defence.2130300.a
+
+		# 需要1級雷達站科技
+		# radio_detection(无线电侦测)
+		trigger = {
+			has_tech = radio_detection 
+		}
+
+		every_owned_state = {
+			limit = {
+				free_building_slots  = {
+					building = radar_station
+					size > 0
+				}
+			}
+
+			# 設置1級雷達
+			set_building_level = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			} # 加雷達
+
+		} # every_owned_state
+
+	} # 設置1級雷達站
+
+	# 設置2級雷達站
+	option = {
+		name = bdt.event.defence.2130300.b
+
+		# 需要2級雷達站科技
+		# decimetric_radar(分米波雷达)
+		trigger = {
+			has_tech = decimetric_radar 
+		}
+
+		every_owned_state = {
+			limit = {
+				free_building_slots  = {
+					building = radar_station
+					size > 0
+				}	
+			}
+
+			# 設置2級雷達
+			set_building_level = {
+				type = radar_station
+				level = 2
+				instant_build = yes
+			} # 加雷達
+
+		} # every_owned_state
+
+	} # 設置2級雷達站
+
+
+	# 下一頁 跳轉3~4雷達站
+	option = {
+		name = bdt.event.common.d
+
+		# 需要最低前置雷達站科技 improved_decimetric_radar
+		# 至少需要3級雷達科技
+		trigger = {
+			has_tech = improved_decimetric_radar 
+		}
+
+		
+		country_event = {
+			id = bdt.event.defence.2130301
+		}
+	} # 下一頁 跳轉3~4雷達站
 
 	# 關閉
 	option = {
 		name = bdt.event.common.b
 	}
 
-}
+} # 1~2雷達站
 
+
+#-----------------------------------------------#
+
+# 3~4級雷達站
+country_event = {
+	id = bdt.event.defence.2130301
+	title = bdt.event.defence.2130301.t
+	desc = bdt.event.defence.2130301.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+	}
+
+	# 移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = bdt_radar_station_idea 
+		}
+	}	
+
+	# 設置3級雷達站
+	option = {
+		# 需要3級雷達站科技
+		# improved_decimetric_radar(改良分米波雷达)
+		trigger = {
+			has_tech = improved_decimetric_radar 
+		}
+		name = bdt.event.defence.2130301.a
+
+		every_owned_state = {
+
+			limit = {
+				free_building_slots  = {
+					building = radar_station
+					size > 0
+				}		
+			}
+
+			set_building_level = {
+				type = radar_station
+				level = 3
+				instant_build = yes
+			}
+		} # every_owned_state
+
+	} # 設置3級雷達站
+
+	# 設置4級雷達站
+	option = {
+		# 需要4級雷達站科技
+		# centimetric_radar(厘米波雷达)
+		trigger = {
+			has_tech = centimetric_radar 
+		}
+		name = bdt.event.defence.2130301.b
+
+		every_owned_state = {
+			limit = {
+				free_building_slots  = {
+					building = radar_station
+					size > 0
+				}	
+			}
+
+			set_building_level = {
+				type = radar_station
+				level = 4
+				instant_build = yes
+			}
+		} # every_owned_state
+
+	} # 設置4級雷達站
+
+
+	# 上一頁 跳轉1~2雷達站
+	option = {
+		name = bdt.event.common.c
+		country_event = {
+			# 跳轉1~2雷達站
+			id = bdt.event.defence.2130300
+		}
+
+	} # 上一頁 跳轉1~2雷達站
+
+	# 下一頁 跳轉5~6雷達站
+	option = {
+		name = bdt.event.common.d
+
+		# 需要至少5級雷達科技
+		# improved_centimetric_radar(改良厘米波雷达)
+		trigger = {
+			has_tech = improved_centimetric_radar 
+		}
+		
+		country_event = {
+			id = bdt.event.defence.2130302
+		}
+
+	} # 下一頁 跳轉5~6雷達站
+
+} # 3~4級雷達站
+
+#-----------------------------------------------#
+
+# 5~6雷達站
+country_event = {
+	id = bdt.event.defence.2130302
+	title = bdt.event.defence.2130302.t
+	desc = bdt.event.defence.2130302.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+	}
+
+	# 移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = bdt_radar_station_idea 
+		}
+	}
+
+
+	# 設置5級雷達站
+	option = {
+		name = bdt.event.defence.2130302.a
+
+		# 需要最低5級雷達站科技 
+		# improved_centimetric_radar(改良厘米波雷达)
+		trigger = {
+			has_tech = improved_centimetric_radar 
+		}
+
+		every_owned_state = {
+			limit = {
+				free_building_slots  = {
+					building = radar_station
+					size > 0
+				}	
+			}
+
+			set_building_level = {
+				type = radar_station
+				level = 5
+				instant_build = yes
+			}
+		} # every_owned_state
+
+	} # 設置5級雷達站
+
+	# 設置6級雷達站
+	option = {
+		name = bdt.event.defence.2130302.b
+
+		# 需要6級雷達站科技 
+		# advanced_centimetric_radar(先进厘米波雷达)
+		trigger = {
+			has_tech = advanced_centimetric_radar 
+		}
+	
+		every_owned_state = {
+			limit = {
+				free_building_slots  = {
+					building = radar_station
+					size > 0
+				}		
+			}
+
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		} # every_owned_state
+		
+	} # 設置6級雷達站
+
+	# 上一頁 跳轉3~4雷達站
+	option = {
+		name = bdt.event.common.c
+		country_event = {
+			# 跳轉3~4級雷達站
+			id = bdt.event.defence.2130302
+		}
+
+	} # 上一頁 跳轉3~4雷達站
+
+	# 關閉
+	option = {
+		name = bdt.event.common.b
+	}
+
+} # 5~6雷達站

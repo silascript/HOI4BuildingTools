@@ -33,7 +33,7 @@ ideas = {
 		bdt_radar_station_idea = {
 			# picture = 
 			on_add = {
-				country_event = bdt.event.defence.21303
+				country_event = bdt.event.defence.2130300
 			}
 		} # 雷達站idea
 
