@@ -12,7 +12,7 @@ idea_categories = {
 		slot = bdt_defence_ideas
 
 		# 高級建筑idea組
-		slot = bdt_advanded_ideas
+		slot = bdt_advanced_ideas
 
 
 		cost = 0

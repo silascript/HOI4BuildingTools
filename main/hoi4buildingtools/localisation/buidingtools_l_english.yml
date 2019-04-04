@@ -10,7 +10,7 @@
   bdt_base_ideas:0 "基建"
   bdt_factory_ideas:0 "工廠建筑"
   bdt_defence_ideas:0 "防禦建筑"
-  bdt_advanded_ideas:0 "高級建筑"
+  bdt_advanced_ideas:0 "高級建筑"
 
   # 基建
   bdt_infrastructure_idea:0 "基建建設"
@@ -143,9 +143,12 @@
 
   # #####################高級建筑#####################
   # 火箭發射井
-
+  bdt.event.advanced.21400.t:0 "火箭發射井"
+  bdt.event.advanced.21400.d:0 "火箭發射井\n建造需要前置科技"
 
   # 核反應堆
+  bdt.event.advanced.21401.t:0 "覈反應堆"
+  bdt.event.advanced.21401.d:0 "覈反應堆\建造需要前置科技"
 
 
   # ##########################通用##########################

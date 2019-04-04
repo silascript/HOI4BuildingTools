@@ -1,13 +1,13 @@
 ideas = {
 	
 	# 高級建筑idea組
-	bdt_advanded_ideas = {
+	bdt_advanced_ideas = {
 
 		# 火箭發射井idea rocket_site
 		bdt_rocket_site_idea = {
 			# picture = 
 			on_add = {
-				# country_event = bdt.event.base.21400
+				country_event = bdt.event.advanced.21400
 			}
 		} # 火箭發射井idea
 
@@ -15,7 +15,7 @@ ideas = {
 		bdt_nuclear_reactor_idea = {
 			# picture = 
 			on_add = {
-				# country_event = bdt.event.base.21401
+				country_event = bdt.event.advanced.21401
 			}
 		} # 核反應堆idea
 
