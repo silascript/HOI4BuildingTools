@@ -21,7 +21,12 @@ radar_station	(雷達站)		最大等級6 --不鎖定最大值 (
 	)
 
 rocket_site	(火箭發射井)		最大等級5
+(前置科技:
+	experimental_rockets:火箭發射井2級
+)
 nuclear_reactor	(核反應堆)	最大等級1 --不鎖定最大值
-
+(前置科技:
+	nuclear_reactor: nuclear_reactor 覈反應堆
+)
 
 

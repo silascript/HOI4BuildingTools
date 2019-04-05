@@ -1,7 +1,7 @@
 add_namespace = bdt.event.advanced
 #############################################
 #												#
-#						高级建筑					#
+#						高级建筑				 #
 #												#
 #############################################
 
@@ -24,14 +24,68 @@ country_event = {
 		}
 	}
 
-
+	# 火箭發射井1級
 	option = {
 		name = bdt.event.advanced.21400.a
-	}
 
+		every_owned_state = {
+
+			# 前置科技 experimental_rockets (火箭試驗)
+			trigger = {
+				has_tech = experimental_rockets 
+			}
+
+			# 
+			add_building_construction = {
+				type = rocket_site
+				level = 1
+				instant_build = yes
+			}
+		} # every_owned_state
+
+	} # 火箭發射井1級
+
+	# 火箭發射井2級
 	option = {
 		name = bdt.event.advanced.21400.b
-	}
+
+		every_owned_state = {
+
+			# 前置科技 experimental_rockets (火箭試驗)
+			trigger = {
+				has_tech = experimental_rockets 
+			}
+
+			# 
+			add_building_construction = {
+				type = rocket_site
+				level = 2
+				instant_build = yes
+			}
+		} # every_owned_state
+
+	} # 火箭發射井2級
+
+	# 火箭發射井滿級(5級)
+	option = {
+		name = bdt.event.advanced.21400.b
+
+		every_owned_state = {
+
+			# 前置科技 experimental_rockets (火箭試驗)
+			trigger = {
+				has_tech = experimental_rockets 
+			}
+
+			# 
+			add_building_construction = {
+				type = rocket_site
+				level = 5
+				instant_build = yes
+			}
+		} # every_owned_state
+
+	} # 火箭發射井滿級(5級)
 
 
 	# 關閉
