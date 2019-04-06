@@ -28,12 +28,12 @@ country_event = {
 	option = {
 		name = bdt.event.advanced.21400.a
 
-		every_owned_state = {
+		# 前置科技 experimental_rockets (火箭試驗)
+		trigger = {
+			has_tech = experimental_rockets 
+		}
 
-			# 前置科技 experimental_rockets (火箭試驗)
-			trigger = {
-				has_tech = experimental_rockets 
-			}
+		every_owned_state = {
 
 			# 
 			add_building_construction = {
@@ -49,12 +49,12 @@ country_event = {
 	option = {
 		name = bdt.event.advanced.21400.b
 
-		every_owned_state = {
+		# 前置科技 experimental_rockets (火箭試驗)
+		trigger = {
+			has_tech = experimental_rockets 
+		}
 
-			# 前置科技 experimental_rockets (火箭試驗)
-			trigger = {
-				has_tech = experimental_rockets 
-			}
+		every_owned_state = {
 
 			# 
 			add_building_construction = {
@@ -70,12 +70,12 @@ country_event = {
 	option = {
 		name = bdt.event.advanced.21400.b
 
-		every_owned_state = {
+		# 前置科技 experimental_rockets (火箭試驗)
+		trigger = {
+			has_tech = experimental_rockets 
+		}
 
-			# 前置科技 experimental_rockets (火箭試驗)
-			trigger = {
-				has_tech = experimental_rockets 
-			}
+		every_owned_state = {
 
 			# 
 			add_building_construction = {
@@ -117,14 +117,26 @@ country_event = {
 		}
 	}
 
-
+	# 添加核反應堆
 	option = {
 		name = bdt.event.advanced.21401.a
-	}
 
-	option = {
-		name = bdt.event.advanced.21401.b
-	}
+		# 前置科技  (核反應堆)
+		trigger = {
+			has_tech = nuclear_reactor 
+		}
+
+		every_owned_state = {
+
+			# 
+			add_building_construction = {
+				type = nuclear_reactor
+				level = 1
+				instant_build = yes
+			}
+		} # every_owned_state
+
+	} # 添加核反應堆
 
 
 	# 關閉
@@ -133,5 +145,4 @@ country_event = {
 	}
 
 } # 核反應堆
-
 

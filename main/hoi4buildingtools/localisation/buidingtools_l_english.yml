@@ -114,7 +114,7 @@
 
   # 防空建筑
   bdt.event.defence.21302.t:0 "防空建筑"
-  bdt.event.defence.21302.d:0 "防空建筑"
+  bdt.event.defence.21302.d:0 "防空建筑\n每個地區添加或設置一定級別的防空建筑"
   bdt.event.defence.21302.a:0 "防空升§G1§!級"
   bdt.event.defence.21302.b:0 "防空升§G2§!級"
   bdt.event.defence.21302.c:0 "防空滿級(§G5§!級)"
@@ -122,7 +122,7 @@
 
   # 雷達站 
   bdt.event.defence.2130300.t:0 "雷達站"
-  bdt.event.defence.2130300.d:0 "雷達站,需要前置雷達科技\nradio_detection(无线电侦测):雷達站1級\ndecimetric_radar(分米波雷达):雷達站2級\n"
+  bdt.event.defence.2130300.d:0 "雷達站\n每個地區設置一定級別的雷達站\n需要前置雷達科技\nradio_detection(无线电侦测):雷達站1級\ndecimetric_radar(分米波雷达):雷達站2級\n"
 
   # 1~2級雷達站
   bdt.event.defence.2130300.a:0 "設置爲1級雷達站"
@@ -144,11 +144,15 @@
   # #####################高級建筑#####################
   # 火箭發射井
   bdt.event.advanced.21400.t:0 "火箭發射井"
-  bdt.event.advanced.21400.d:0 "火箭發射井\n建造需要前置科技"
+  bdt.event.advanced.21400.d:0 "火箭發射井\n每個地區建造一定數量的火箭發射井\n建造需要前置科技\n每個地區最多能建5個火箭發射井"
+  bdt.event.advanced.21400.a:0 "添加1個火箭發射井"
+  bdt.event.advanced.21400.b:0 "添加2個火箭發射井"
+  bdt.event.advanced.21400.c:0 "添加5個火箭發射井"
 
   # 核反應堆
-  bdt.event.advanced.21401.t:0 "覈反應堆"
-  bdt.event.advanced.21401.d:0 "覈反應堆\n建造需要前置科技"
+  bdt.event.advanced.21401.t:0 "核反應堆"
+  bdt.event.advanced.21401.d:0 "核反應堆\n建造需要前置科技\n一個地區最多只能建一個"
+  bdt.event.advanced.21401.a:0 "添加1個核反應堆"
 
 
   # ##########################通用##########################
