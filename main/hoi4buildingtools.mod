@@ -1,5 +1,5 @@
 ﻿version="1.5"
-name="HOI4BuildingTools"
+name="HOI4 Building Tools"
 path="mod/hoi4buildingtools/"
 tags={
 	"Utilities"
