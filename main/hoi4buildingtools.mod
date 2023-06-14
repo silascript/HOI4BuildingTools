@@ -1,4 +1,4 @@
-﻿version="1.7"
+﻿version="1.8"
 name="HOI4 Building Tools"
 path="mod/hoi4buildingtools/"
 tags={
