@@ -1,0 +1,101 @@
+add_namespace = bdt.event.facility
+
+
+
+
+# 地面戰設施
+country_event = {
+	id = bdt.event.advanced.21500
+	title = bdt.event.advanced.21500.t
+	desc = bdt.event.advanced.21500.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+	}
+
+	# 移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = bdt_facility_land_idea
+		}
+	}
+
+	# 地面戰設施1級
+	option = {
+		name = bdt.event.advanced.21500.a
+
+		# 前置科技 
+		# trigger = {
+		# 	has_tech =  
+		# }
+
+		every_owned_state = {
+
+			# 
+			add_building_construction = {
+				type = land_facility
+				level = 1
+				instant_build = yes
+			}
+		} # every_owned_state
+
+	} # 地面戰設施1級
+
+	# 地面戰設施2級
+	option = {
+		name = bdt.event.advanced.21500.b
+
+		# 前置科技 
+		# trigger = {
+		# 	has_tech =  
+		# }
+
+		every_owned_state = {
+
+			# 
+			add_building_construction = {
+				type = land_facility
+				level = 2
+				instant_build = yes
+			}
+		} # every_owned_state
+
+	} # 地面戰設施2級
+
+	# 地面戰設施滿級(5級)
+	option = {
+		name = bdt.event.advanced.21500.c
+
+		# 前置科技 
+		# trigger = {
+		# 	has_tech =  
+		# }
+
+		every_owned_state = {
+
+			# 
+			add_building_construction = {
+				type = land_facility
+				level = 5
+				instant_build = yes
+			}
+		} # every_owned_state
+
+	} # 滿級(5)
+
+
+	# 關閉
+	option = {
+		name = bdt.event.common.b
+	}
+
+} # 地面戰實驗設施
+
+
+# air_facility 航空研究設施
+
+# naval_facility 海軍工程設施
+
+# nuclear_facility 核能研究設施

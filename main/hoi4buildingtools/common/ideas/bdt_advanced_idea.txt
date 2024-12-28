@@ -21,4 +21,47 @@ ideas = {
 
 	} # 高級建筑idea組
 
+
+	# 實驗設施组
+	bdt_facility_ideas = {
+
+		# land_facility 地面戰設施
+		bdt_facility_land_idea = {
+			# picture = 
+			on_add = {
+				country_event = bdt.event.advanced.21500
+			}
+
+		} # land_facility 地面戰設施
+
+		# air_facility 航空研究設施
+		bdt_facility_air_idea = {
+			# picture = 
+			on_add = {
+				country_event = bdt.event.advanced.21501
+			}
+		} # air_facility 航空研究設施
+
+
+		# naval_facility 海軍工程設施
+		bdt_facility_naval_idea = {
+			# picture = 
+			on_add = {
+				country_event = bdt.event.advanced.21502
+			}
+		} # naval_facility 海軍工程設施
+
+
+		# nuclear_facility 核研究設施
+		bdt_facility_nuclear_idea = {
+			# picture = 
+			on_add = {
+				country_event = bdt.event.advanced.21503
+			}
+		} # nuclear_facility 核研究設施
+
+
+	}
+
+
 }

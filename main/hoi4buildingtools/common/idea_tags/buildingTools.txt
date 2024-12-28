@@ -14,6 +14,9 @@ idea_categories = {
 		# 高級建筑idea組
 		slot = bdt_advanced_ideas
 
+		# 實驗設施idea組
+		slot = bdt_facility_ideas
+
 
 		cost = 0
 		removal_cost = 0

@@ -11,6 +11,7 @@
   bdt_factory_ideas:0 "工廠建筑"
   bdt_defence_ideas:0 "防禦建筑"
   bdt_advanced_ideas:0 "高級建筑"
+  bdt_facility_ideas:0 "實驗設施"
 
   # 基建
   bdt_infrastructure_idea:0 "基建建設"
@@ -34,7 +35,12 @@
   # 高級建筑
   bdt_rocket_site_idea:0 "火箭發射井建設"
   bdt_nuclear_reactor_idea:0 "核反應堆建設"
-
+  
+  # 實驗設施
+  bdt_facility_land_idea:0 "地面戰研究設施"
+  bdt_facility_air_idea:0 "航空研究設施"
+  bdt_facility_naval_idea:0 "海軍工程設施"
+  bdt_facility_nuclear_idea:0 "核能研究設施"
 
   # #########################event######################### 
   
@@ -153,7 +159,22 @@
   bdt.event.advanced.21401.t:0 "核反應堆"
   bdt.event.advanced.21401.d:0 "核反應堆\n建造需要前置科技\n一個地區最多只能建一個"
   bdt.event.advanced.21401.a:0 "添加1個核反應堆"
+  
 
+  # #####################實驗設施#####################
+
+  # 地面戰設施 
+	bdt.event.advanced.21500.t:0 "地面戰研究設施"
+	bdt.event.advanced.21500.d:0 "地面戰研究設施"
+	bdt.event.advanced.21500.a:0 "添加1個地面戰研究設施"
+	bdt.event.advanced.21500.b:0 "添加2個地面戰研究設施"
+	bdt.event.advanced.21500.c:0 "添加5個地面戰研究設施"
+
+  # 航空研究設施 
+
+  # 海軍研究設施 
+
+  # 核能研究設施 
 
   # ##########################通用##########################
 
