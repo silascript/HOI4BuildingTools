@@ -30,11 +30,13 @@ country_event = {
 		every_owned_state = {
 
 			# 限制條件
-			limit = {
-				is_core_of = THIS
-				free_building_slots = {
-					building = infrastructure
-					size > 0
+			if {
+				limit = {
+					is_core_of = THIS
+					free_building_slots = {
+						# building = infrastructure
+						size > 0
+					}
 				}
 			}
 
