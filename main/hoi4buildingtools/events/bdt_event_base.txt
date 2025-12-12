@@ -328,44 +328,157 @@ country_event = {
 # ================================================== #
 
 
-# 燃油庫
-# country_event = {
-#	id = bdt.event.base.21103
-#	title = bdt.event.base.21103.t
-#	desc = bdt.event.base.21103.d
-#
-#	is_triggered_only = yes
-#
-#	trigger = {
-#		is_ai = no
-#	}
-#	
-#	# 移除燃油庫idea
-#	immediate = {
-#		hidden_effect = { 
-#			remove_ideas = bdt_fuel_silo_idea 
-#		}
-#	}
-#
-#	# 升級燃油庫1級
-#	option = {
-#		name = bdt.event.base.21103.a
-#	 
-#		# max_fuel_building = 110	
-#	 
-#	}
-#
-#
-#
-#	# 關閉
-#	option = {
-#		name = bdt.event.common.b
-#	}
-# 
-# 
-# } # 燃油庫
+# 儲油罐
+# fuel_silo
+country_event = {
+	id = bdt.event.base.21103
+	title = bdt.event.base.21103.t
+	desc = bdt.event.base.21103.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+	}
+	
+	# 移除燃油庫idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = bdt_fuel_silo_idea 
+		}
+	}
+
+	# 升級儲油罐1級
+	option = {
+		name = bdt.event.base.21103.a
+	 
+		# max_fuel_building = 110	
+
+		every_owned_state = {
+			limit = {
+				is_core_of = THIS
+			}
+
+			# 儲油罐升1級
+			add_building_construction = {
+				type = fuel_silo
+				level = 1
+				instant_build = yes
+			}
+
+		} # every_owned_state
+	 
+	}
 
 
 
+	# 關閉
+	option = {
+		name = bdt.event.common.b
+	}
 
 
+} # 儲油罐
+
+# ================================================== #
+
+# 強化電網
+# energy_infrastructure
+country_event = {
+	id = bdt.event.base.21111
+	title = bdt.event.base.21111.t
+	desc = bdt.event.base.21111.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+	}
+	
+	# 移除強化電網idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = bdt_energy_infrastructure_idea 
+		}
+	}
+
+	# 強化電網
+	option = {
+		name = bdt.event.base.21111.a
+
+		every_owned_state = {
+			limit = {
+				is_core_of = THIS
+			}
+
+			# 
+			add_building_construction = {
+				type = energy_infrastructure
+				level = 1
+				instant_build = yes
+			}
+
+		} # every_owned_state
+
+	} 
+
+
+
+	# 關閉
+	option = {
+		name = bdt.event.common.b
+	}
+
+
+} # 強化電網
+
+
+# 大容量电网
+# industrial_infrastructure
+country_event = {
+	id = bdt.event.base.21112
+	title = bdt.event.base.21112.t
+	desc = bdt.event.base.21112.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+	}
+	
+	# 移除大容量電網idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = bdt_industrial_infrastructure_idea
+		}
+	}
+
+	# 大容量電網
+	option = {
+		name = bdt.event.base.21112.a
+
+		every_owned_state = {
+			limit = {
+				is_core_of = THIS
+			}
+
+			# 
+			add_building_construction = {
+				type = industrial_infrastructure
+				level = 1
+				instant_build = yes
+			}
+
+		} # every_owned_state
+
+	} 
+
+
+
+	# 關閉
+	option = {
+		name = bdt.event.common.b
+	}
+
+
+} # 大容量電網

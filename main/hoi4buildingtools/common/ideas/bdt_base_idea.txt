@@ -29,13 +29,30 @@ ideas = {
 
 		} # 海軍基地
 
-		# 燃油庫 fuel_silo
-		# bdt_fuel_silo_idea = {
-		# 	# picture = 
-		# 	on_add = {
-		# 		# country_event = bdt.event.base.21103
-		# 	}
-		# }
+		# 儲油罐 fuel_silo
+		bdt_fuel_silo_idea = {
+			# picture = 
+			on_add = {
+				country_event = bdt.event.base.21103
+			}
+		}
+
+		# 強化電網 
+		bdt_energy_infrastructure_idea = {
+
+			on_add = {
+				country_event = bdt.event.base.21111
+			}
+
+		} # 強化電網 
+
+		# 大容量電網
+		bdt_industrial_infrastructure_idea = {
+			on_add = {
+				country_event = bdt.event.base.21112
+			}
+
+		} # 大容量電網
 		
 	} # bdt_base_ideas
 

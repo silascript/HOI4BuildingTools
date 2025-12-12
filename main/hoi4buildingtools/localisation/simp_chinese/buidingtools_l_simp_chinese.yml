@@ -17,7 +17,9 @@
   bdt_infrastructure_idea:0 "基建建設"
   bdt_air_base_idea:0 "空軍基地建設"
   bdt_naval_base_idea:0 "海軍基地建設"
-  bdt_fuel_silo_idea:0 "燃油庫建設"
+  bdt_fuel_silo_idea:0 "儲油罐建設"
+  bdt_energy_infrastructure_idea:0 "強化電網建设"
+  bdt_industrial_infrastructure_idea:0 "大容量電網建设"
 
   # 工廠建筑
   bdt_industrial_idea:0 "民用工廠建設"
@@ -66,10 +68,20 @@
   bdt.event.base.21102.b:0 "海軍基地升§G5§!級"
   bdt.event.base.21102.c:0 "海軍基地滿級(§G10§!級)"
 
-  # 燃油庫
-  # bdt.event.base.21103.t:0 "燃油庫"
-  # bdt.event.base.21103.d:0 "燃油庫"
-  # bdt.event.base.21103.a:0 "燃油庫升§G1§!級" 
+  # 儲油罐
+  bdt.event.base.21103.t:0 "儲油罐"
+  bdt.event.base.21103.d:0 "儲油罐"
+  bdt.event.base.21103.a:0 "儲油罐建§G1§!座" 
+
+  # 強化電網
+  bdt.event.base.21111.t:0 "強化電網"
+  bdt.event.base.21111.d:0 "強化電網！每個省衹能建一座！"
+  bdt.event.base.21111.a:0 "強化電網建§G1§!座"
+
+  # 大容量電網
+  bdt.event.base.21112.t:0 "大容量電網"
+  bdt.event.base.21112.d:0 "大容量電網！每個省衹能建一座！"
+  bdt.event.base.21112.a:0 "大容量電網建§G1§!座"
 
   # #####################工廠建筑#####################
   # 民用工廠
