@@ -1,7 +1,7 @@
-﻿version="6.0"
+﻿version="7.0"
 name="HOI4 Building Tools"
 path="mod/hoi4buildingtools/"
 tags={
 	"Utilities"
 }
-supported_version="1.17.*"
+supported_version="1.19.*"

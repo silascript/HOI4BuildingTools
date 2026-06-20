@@ -1,6 +1,6 @@
-version="6.0"
+version="7.0"
 tags={
 	"Utilities"
 }
 name="HOI4 Building Tools"
-supported_version="1.17.*"
+supported_version="1.19.*"
